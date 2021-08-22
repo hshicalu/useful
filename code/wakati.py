@@ -1,4 +1,5 @@
 
+# mecabを用いた分かち書き
 
 import MeCab
 import re
