@@ -17,4 +17,4 @@ sh cpp.sh task
 ## colab
 Colab特有のtips
 ## vim
-vimの設定ファイル
+`.vimrc`：vimの設定ファイル
