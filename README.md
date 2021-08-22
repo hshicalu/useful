@@ -8,8 +8,8 @@
 ## running
 実行を楽にするシェルファイル  
 `Python`,`C++`,`C`に対応  
-実行コマンドは以下
 ```
+# 実行コマンドは以下
 sh cpp.sh {ファイル名（拡張子不要）}
 # task.cppなら...
 sh cpp.sh task
