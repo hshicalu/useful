@@ -2,7 +2,7 @@
 使い勝手のいいコードを置くrepository
 
 ## code
-`wakati.py`,`wakati.ipynb`：分かち書き  
+`wakati.py`：分かち書き  
 `dp.cpp`：動的計画法  
 `bs.cpp`：binary search（二分探索）  
 ## running
