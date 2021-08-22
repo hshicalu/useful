@@ -5,7 +5,7 @@
 `wakati.py`：分かち書き  
 `dp.cpp`：動的計画法  
 `bs.cpp`：binary search（二分探索）  
-`colab.txt`：colabでドライブをマウントするおまじない
+`colab.py`：colabでドライブをマウントするおまじない
 ## running
 実行を楽にするシェルファイル  
 `Python`,`C++`,`C`に対応  
