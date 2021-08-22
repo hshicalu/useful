@@ -5,6 +5,7 @@
 `wakati.py`：分かち書き  
 `dp.cpp`：動的計画法  
 `bs.cpp`：binary search（二分探索）  
+`colab.txt`：colabでドライブをマウントするおまじない
 ## running
 実行を楽にするシェルファイル  
 `Python`,`C++`,`C`に対応  
@@ -14,7 +15,5 @@ sh cpp.sh {ファイル名（拡張子不要）}
 # task.cppなら...
 sh cpp.sh task
 ```
-## colab
-Colab特有のtips
 ## vim
 `.vimrc`：vimの設定ファイル
