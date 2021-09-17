@@ -23,3 +23,34 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # xxx.ipynbからxxx.pyを生成するおまじない
 jupyter nbconvert --to python xxx.ipynb
+
+# 連番のフォルダを作成する
+import os
+for i in range(10):
+    os.mkdir("./folder{}".format(i))
+
+# 連番のファイルの作成 
+import pathlib 
+path = '***'
+for i in range(10):
+    file = pathlib.Path("./file{}.py".format(i))
+    file.touch()
+
+# スクレイピングの雛形
+import requests
+from bs4 import BeautifulSoup
+response = requests.get('https://www.pasonatech.co.jp/')
+soup = BeautifulSoup(response.text, 'html.parser')
+title = soup.find('title').get_text()
+print(title)
+
+# Flaskの雛形
+from flask import Flask
+app = Flask(__name__)
+@app.route('/')
+def hello_world():
+    return '<html><body><h1>sample</h1></body></html>'
+if __name__ == '__main__':
+    app.run()
+
+
