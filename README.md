@@ -2,10 +2,15 @@
 使い勝手のいいコードを置くrepository
 
 ## code
-`wakati.py`：分かち書き  
-`dp.cpp`：動的計画法  
-`bs.cpp`：binary search（二分探索）  
-`colab.py`：colabでドライブをマウントするおまじない
+`code.py`
+- 分かち書き  
+- colabでドライブをマウントするおまじない
+- colabのGPU設定
+- jupyterをpythonファイルに変換するコマンド  
+<!-- comment -->
+`code.cpp`
+- 動的計画法  
+- binary search（二分探索）  
 ## running
 実行を楽にするシェルファイル  
 `Python`,`C++`,`C`に対応  
