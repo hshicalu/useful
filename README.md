@@ -7,6 +7,9 @@
 - colabでドライブをマウントするおまじない
 - colabのGPU設定
 - jupyterをpythonファイルに変換するコマンド  
+- 連番のファイル・フォルダを作成する
+- スクレイピングの雛形
+- Flaskの雛形
 <!-- comment -->
 `code.cpp`
 - 動的計画法  
