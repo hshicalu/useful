@@ -53,4 +53,11 @@ def hello_world():
 if __name__ == '__main__':
     app.run()
 
+# シードの設定
+import random
+random.seed(2022)
+
+# TSVファイルの保存
+df.to_csv(f'{file_name}.tsv', sep='\t', index=False)
+
 
