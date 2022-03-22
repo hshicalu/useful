@@ -18,6 +18,7 @@ def wakati(sentence):
 # Colabでドライブをマウントするおまじない
 from google.colab import drive
 drive.mount('/content/drive')
+
 # GPUを使うときのおまじない
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -60,4 +61,15 @@ random.seed(2022)
 # TSVファイルの保存
 df.to_csv(f'{file_name}.tsv', sep='\t', index=False)
 
+# PythonからBQを操作する
+
+## Read from BQ
+import pandas as pd
+query = "SELECT * \
+FROM `{Pj_name}.{db_name}.{table_name}` \
+"
+df = pd.read_gbq(query, '{Pj_name}')
+
+## Upload to BQ
+df.to_gbq('{db_name}.{table_name}', project_id='{Pj_name}', if_exists='replace')
 
