@@ -5,11 +5,15 @@
 `code.py`
 - 分かち書き  
 - colabでドライブをマウントするおまじない
-- colabのGPU設定
+- GPU設定
 - jupyterをpythonファイルに変換するコマンド  
 - 連番のファイル・フォルダを作成する
 - スクレイピングの雛形
 - Flaskの雛形
+- シードの設定
+- TSVファイルの扱い
+- PythonからBQを操作する
+- PythonからMySQLを操作する
 <!-- comment -->
 `code.cpp`
 - 動的計画法  
