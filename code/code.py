@@ -63,7 +63,7 @@ df.to_csv(f'{file_name}.tsv', sep='\t', index=False)
 
 # PythonからBQを操作する
 
-## Read from BQ
+## Load from BQ
 import pandas as pd
 query = "SELECT * \
 FROM `{Pj_name}.{db_name}.{table_name}` \
@@ -72,4 +72,28 @@ df = pd.read_gbq(query, '{Pj_name}')
 
 ## Upload to BQ
 df.to_gbq('{db_name}.{table_name}', project_id='{Pj_name}', if_exists='replace')
+
+# PythonからMySQLを操作する
+
+## Load from MySQL
+import MySQLdb
+connection = MySQLdb.connect(
+    host='IP_address',
+    user='root',
+    passwd='passward',
+    db='db_name')
+cursor = connection.cursor()
+
+## Edit in Python
+cursor.execute("SELECT * FROM {db_name}.{table_name}")
+
+cursor.execute("""insert into {table_name}
+(id, title, content, created_at) VALUES
+(0, 'aaa', 'Th', '1970-01-01 00:00:01.000000')
+""")
+
+## Print the results
+rows = cursor.fetchall()
+for row in rows:
+    print(row)
 
