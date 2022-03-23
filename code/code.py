@@ -97,3 +97,10 @@ rows = cursor.fetchall()
 for row in rows:
     print(row)
 
+# loggerの表示
+from logging import basicConfig, getLogger
+logFmt = "%(asctime)s %(levelname)s %(name)s :%(message)s"
+level = 'INFO'
+basicConfig(level=level, format=logFmt)
+logger = getLogger()
+
