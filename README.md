@@ -1,7 +1,7 @@
 # useful
 使い勝手のいいコードを置くrepository
 
-## code
+## src
 `code.py`
 - 分かち書き  
 - colabでドライブをマウントするおまじない
