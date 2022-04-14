@@ -15,6 +15,9 @@ def wakati(sentence):
     wakati = list(filter(("").__ne__, wakati))
     return wakati
 
+# mecab-ipadic-NEologdで単語分かち書きをする場合
+TAGGAR = MeCab.Tagger("-d /usr/local/lib/mecab/dic/mecab-ipadic-neologd")
+
 # Colabでドライブをマウントするおまじない
 from google.colab import drive
 drive.mount('/content/drive')
