@@ -1,0 +1,8 @@
+LOG_PATH=/Users/hs/cron/logs
+
+# delete log files
+0 15 * * * find $LOG_PATH -mtime +7 | xargs rm
+
+# update mecab-ipadic-NEologd
+00 03 * * 2,5 cd mecab-ipadic-neologd; ./bin/install-mecab-ipadic-neologd -n -y -u -p /usr/local/lib/mecab/dic/mecab-ipadic-neologd > $LOG_PATH/`date +\%Y\%m\%d`.log
+
